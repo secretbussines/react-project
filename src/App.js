@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          Hello there! are changin coming or not?
+          Hello there! Yeah finlly changes are coming.
         </h1>
       </header>
     </div>
