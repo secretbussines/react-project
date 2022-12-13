@@ -1,12 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.html'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>
+
           Alaka usman sange ye?
         </h1>
       </header>
