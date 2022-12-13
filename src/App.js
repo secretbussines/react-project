@@ -3,8 +3,8 @@ import './index.html'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <h1>
 
           Alaka usman sange ye?
