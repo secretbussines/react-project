@@ -1,15 +1,31 @@
-import logo from './logo.svg';
-import './index.html'
+import React, {useState} from "react";
+
+import './App.css';
+
+import {Board} from './components/Board';
 
 function App() {
-  return (
-    <div>
-      <header>
-        <h1>
 
-          Alaka usman sange ye?
-        </h1>
-      </header>
+  const [board, setBoard] = useState(Array(9).fill(null));
+  const [xPlaying, setXPlaying] = useState(true);
+  const handleBoxClick = (boxIdx) => {
+    const updatedBoard = board.map((value, idx) => {
+      if(idx === boxIdx) {
+        return xPlaying === true ? "X" : "O";
+      }else {
+        return value;
+      }
+    })
+    setBoard(updatedBoard);
+
+    setXPlaying(!xPlaying);
+
+  }
+
+  return (
+    <div className="App">
+      <Board board={board} onClick={handleBoxClick} />
+
     </div>
   );
 }
