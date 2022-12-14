@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import './App.css';
 
 import {Board} from './components/Board';
-import {ScoreBoard} from "./components/ScoreBoard"
+import {ScoreBoard} from "./components/ScoreBoard";
 function App() {
 
   const WIN_CONDITIONS = [
@@ -19,7 +19,7 @@ function App() {
 
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xPlaying, setXPlaying] = useState(true);
-  const [scores, setScores] = useState({ xScore: 0, oScore: 0})
+  const [scores, setScores] = useState({xScore:0, oScore:0})
   const [gameOver, setGameOver] = useState(false)
 
   const handleBoxClick = (boxIdx) => {
