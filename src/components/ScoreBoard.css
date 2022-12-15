@@ -21,13 +21,13 @@
 }
 
 .x-score {
-    color:(255, 70, 37);
+    color: [255, 70, 37];
     border-bottom: 5px solid(255, 70, 37);
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .o-score {
-    color: (44, 135, 255);
+    color: [44, 135, 255];
     border-bottom: 5px solid(44, 135, 255);
     border-radius: 0 0.5rem 0.5rem 0;
 }

@@ -2,8 +2,10 @@ import React, {useState} from "react";
 
 import './App.css';
 
-import {Board} from './components/Board';
-import {ScoreBoard} from "./components/ScoreBoard";
+import {Board} from './components/Board'
+import {ScoreBoard} from "./components/ScoreBoard"
+import { ResetButton } from "./components/ResetButton";
+
 function App() {
 
   const WIN_CONDITIONS = [
@@ -50,7 +52,7 @@ function App() {
     setXPlaying(!xPlaying);
 
   }
-
+  
   const checkWinner = (board) => {
     for (let i = 0; i < WIN_CONDITIONS.length; i++) {
       const [x, y, z] = WIN_CONDITIONS[i];
@@ -72,7 +74,7 @@ function App() {
     <div className="App">
       <ScoreBoard  scores={scores} xPlaying={xPlaying} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
-
+      <ResetButton resetBoard={resetBoard}/>
     </div>
   );
 }
